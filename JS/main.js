@@ -1,6 +1,4 @@
-function Loader() {
-  setTimeout(showPage, 3000);
-}
+
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
@@ -25,5 +23,6 @@ setInterval(() => {
     if(loadingVariant == 4) {loadingVariant = 0}
 },500)
 
+  
 
 

@@ -69,3 +69,26 @@
     cursor: url("../ASSETS/Cursor/Windows 98 help.cur"),  default;
   }
 
+  #draggable { 
+      position: absolute;
+      width: 800px; 
+      height: 450px; 
+      color: white;
+      background-color: black;
+      border: 2px solid White
+    }
+  
+  .navbar{
+        background-color: var(--StyleFive);
+        border-bottom: 2px solid white;
+    }
+  div.navbar-header{
+      margin: auto;
+
+  }
+  a.quit{
+    position: absolute;
+      color: #cc0000;
+      text-decoration:none;
+  }
+
