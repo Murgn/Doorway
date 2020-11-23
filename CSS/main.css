@@ -1,0 +1,71 @@
+ :root {
+    --StyleOne: #D46CE7;
+    --StyleTwo: #E9F259;
+    --StyleThree: #9EFFB8;
+    --StyleFour: #89AEE1;
+    --StyleFive: #000000;
+  }
+
+  @font-face {
+    font-family: Retro;
+    src: url(RetroGaming.ttf);
+  }
+  
+  body { 
+      background-color: var(--StyleOne);
+      font-family: "Retro";
+  }
+
+  #loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--StyleFive);
+    color: white;
+    text-align: right;
+  }
+
+  .loader-specs {
+      color: var(--StyleThree);
+      position: absolute;
+      text-align: left;
+  }
+  #dOS{
+    color: var(--StyleTwo);
+  }
+
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+  *{
+    cursor: url("../ASSETS/Cursor/Windows 98 arrow.cur"),  default;
+  }
+
+  a:hover{
+    cursor: url("../ASSETS/Cursor/Windows 98 help.cur"),  default;
+  }
+
+  p:hover, h1:hover{
+    cursor: url("../ASSETS/Cursor/Windows 98 beam.cur"),  default;
+  }
+
+  a:active{
+    cursor: url("../ASSETS/Cursor/Windows 98 help.cur"),  default;
+  }
+
